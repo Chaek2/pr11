@@ -16,7 +16,7 @@ namespace SYEL
     {
         public enum Function { select, insert, update, delete };
         public static DataSet dataSet = new DataSet();
-        private static string connText = "Data Source=HOME-PC\\MYSERV;Initial Catalog=SYEL;Integrated Security=false; user id=sa; password=123"; // строка подключения
+        private static string connText = "Data Source=...;Initial Catalog=SYEL;Integrated Security=false; user id=...; password=..."; // строка подключения
         private static string return_TableName = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES"; // вывод таблиц
         private static string return_ColumnName = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '"; // вывод столбцов таблицы
         private static string return_ColumnID = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE ORDINAL_POSITION = 1 and TABLE_NAME = '"; // вывод 1-ого столбца 
